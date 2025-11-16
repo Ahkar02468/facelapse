@@ -1,12 +1,6 @@
 
 # faceLAPSE
-<iframe width="560" height="315" 
-  src="https://youtu.be/LLvNx81hz1A" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+[![Watch Video]](https://www.youtube.com/watch?v=LLvNx81hz1A)
 
 Life moves fast, and the small, everyday changes are impossible to see until you look back.
 faceLAPSE is a simple, dedicated, and fun app built for one purpose: to help you create a beautiful time-lapse video of your own life.
