@@ -21,7 +21,7 @@ This project contains a frontend built with Astro and a Python backend powered b
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/facelapse.git
+   git clone https://github.com/Ahkar02468/facelapse.git
    cd facelapse
    ```
 
@@ -56,7 +56,7 @@ You need to run both the backend and frontend servers in separate terminals.
      ```sh
      python3 backend/app.py
      ```
-   - The backend will be running on `http://12unzip`
+   - The backend will be running on `http://127.0.0.1:5000/`
 
 2. **Run the Frontend (Astro):**
 
