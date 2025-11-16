@@ -5,6 +5,7 @@ Life moves fast, and the small, everyday changes are impossible to see until you
 faceLAPSE is a simple, dedicated, and fun app built for one purpose: to help you create a beautiful time-lapse video of your own life.
 
 ![facelapse Portfolio](./frontend/public/facelapse-ss.png "facelapse")
+![facelapse Portfolio](./frontend/public/facelapse-ss1.png "facelapse")
 
 ## Getting Started
 
