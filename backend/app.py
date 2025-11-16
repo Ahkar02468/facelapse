@@ -11,6 +11,7 @@ from config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
+app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024 * 1024  # 5 GB upload limit
 CORS(app, origins="http://localhost:4321")
 
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)

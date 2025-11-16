@@ -29,6 +29,21 @@ function initializeUploadLogic() {
                     return;
                 }
 
+                const maxSizeInBytes = 150 * 1024 * 1024; // 150 MB
+                let totalSize = 0;
+                for (let i = 0; i < files.length; i++) {
+                    totalSize += files[i].size;
+                }
+
+                if (totalSize > maxSizeInBytes) {
+                    const errorEvent = new CustomEvent('show-error', {
+                        detail: { message: `Total upload size exceeds the 150 MB limit. Your selection is ${(totalSize / (1024 * 1024)).toFixed(2)} MB.` }
+                    });
+                    document.dispatchEvent(errorEvent);
+                    return;
+                }
+
+
                 const formData = new FormData(uploadForm);
                 let validFileCount = 0;
 
