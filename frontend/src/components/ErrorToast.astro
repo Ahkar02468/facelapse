@@ -1,0 +1,45 @@
+---
+---
+<div id="error-toast" class="toast-hidden">
+    <!-- The error message will be set via JavaScript -->
+</div>
+
+<script>
+    document.addEventListener('show-error', (event) => {
+        const toast = document.getElementById('error-toast');
+        const message = (event as CustomEvent).detail.message;
+
+        if (toast && message) {
+            toast.textContent = message;
+            toast.classList.remove('toast-hidden');
+            toast.classList.add('toast-visible');
+
+            setTimeout(() => {
+                toast.classList.remove('toast-visible');
+                toast.classList.add('toast-hidden');
+            }, 3000); // Hide after 3 seconds
+        }
+    });
+</script>
+
+<style>
+    .toast-hidden {
+        display: none;
+        opacity: 0;
+    }
+    .toast-visible {
+        display: block;
+        position: fixed;
+        bottom: 1.25rem; /* 20px */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ef4444; /* red-500 */
+        color: white;
+        padding: 0.75rem 1.5rem; /* py-3 px-6 */
+        border-radius: 0.5rem; /* rounded-lg */
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        z-index: 50;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>

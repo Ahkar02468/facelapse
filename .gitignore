@@ -1,0 +1,39 @@
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+
+# Python virtual environment
+facelapse/
+venv/
+env/
+
+# IDE and editor files
+.vscode/
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Node.js dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.astro/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Backend uploads
+backend/uploads/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
